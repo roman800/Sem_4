@@ -39,6 +39,10 @@ namespace Lab01
             return result;
         }
 
+        public void Clear()
+        {
+            Accumulator = 0d;
+        }
 
         public double Accumulator { get; private set; }
     }
