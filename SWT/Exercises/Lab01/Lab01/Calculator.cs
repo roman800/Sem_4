@@ -42,22 +42,23 @@ namespace Lab01
         //Using Accumulator
         public double Add(double a)
         {
-            return a + Accumulator;
+            
+            return Add(Accumulator,a);
         }
 
         public double Subtract(double a)
         {
-            return a - Accumulator;
+            return Subtract(Accumulator,a);
         }
 
         public double Multiply(double a)
         {
-            return a * Accumulator;
+            return  Multiply(Accumulator,a);
         }
 
         public double Power(double x)
         {
-            return Math.Pow(Accumulator, x);
+            return Power(Accumulator,x);
         }
 
 
