@@ -51,6 +51,13 @@ namespace Lab01.UnitTests
             Assert.That(c.Power(a, b), Is.EqualTo(expected));
         }
 
+        [Test]
+        public void Accumulator_Add_1_2_Accumulator_Equals_3_Success()
+        {
+            c.Add(1, 2);
+            Assert.That(c.Accumulator, Is.EqualTo(3));
+        }
+
         [TearDown]
         public void TearDown()
         {

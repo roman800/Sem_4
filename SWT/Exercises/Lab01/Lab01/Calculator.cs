@@ -6,22 +6,32 @@ namespace Lab01
     {
         public double Add(double a, double b)
         {
-            return a + b;
+            double result = a + b;
+            Accumulator = result;
+            return result;
         }
 
         public double Subtract(double a, double b)
         {
-            return a - b;
+            double result = a - b;
+            Accumulator = result;
+            return result;
         }
 
         public double Multiply(double a, double b)
         {
-            return a * b;
+            double result = a * b;
+            Accumulator = result;
+            return result;
         }
 
         public double Power(double x, double exp)
         {
-            return Math.Pow(x, exp);
+            double result = Math.Pow(x, exp);
+            Accumulator = result;
+            return result;
         }
+
+        public double Accumulator { get; private set; }
     }
 }
