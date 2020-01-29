@@ -51,6 +51,16 @@ namespace Lab01.UnitTests
             Assert.That(c.Power(a, b), Is.EqualTo(expected));
         }
 
+        [TestCase(2, 2, 1)]
+        [TestCase(6,3,2)]
+        [TestCase(10,5,2)]
+        [TestCase(10,3,(3.3333333333333335d))]
+        public void Test_divide_function(double a, double b, double expected)
+        {
+            Assert.That(c.Divide(a,b), Is.EqualTo(expected));
+        }
+
+
         [Test]
         public void Accumulator_Add_1_2_Accumulator_Equals_3_Success()
         {

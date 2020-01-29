@@ -32,6 +32,12 @@ namespace Lab01
             return result;
         }
 
+        public double Divide(double a, double b)
+        {
+            return (a / b);
+        }
+
+
         public double Accumulator { get; private set; }
     }
 }
