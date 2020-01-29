@@ -34,7 +34,9 @@ namespace Lab01
 
         public double Divide(double a, double b)
         {
-            return (a / b);
+            double result = a / b;
+            Accumulator = result;
+            return result;
         }
 
 
