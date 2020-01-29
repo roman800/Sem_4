@@ -51,6 +51,8 @@ namespace Lab01.UnitTests
             Assert.That(c.Power(a, b), Is.EqualTo(expected));
         }
 
+
+
         [TearDown]
         public void TearDown()
         {

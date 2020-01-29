@@ -23,5 +23,26 @@ namespace Lab01
         {
             return Math.Pow(x, exp);
         }
+
+        //Using Accumulator
+        public double Add(double a)
+        {
+            return a + Accumulator;
+        }
+
+        public double Subtract(double a)
+        {
+            return a - Accumulator;
+        }
+
+        public double Multiply(double a)
+        {
+            return a * Accumulator;
+        }
+
+        public double Power(double x)
+        {
+            return Math.Pow(x, Accumulator);
+        }
     }
 }
