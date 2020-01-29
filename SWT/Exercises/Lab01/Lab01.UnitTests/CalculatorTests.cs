@@ -68,6 +68,8 @@ namespace Lab01.UnitTests
             Assert.That(c.Accumulator, Is.EqualTo(3));
         }
 
+
+
         [TearDown]
         public void TearDown()
         {

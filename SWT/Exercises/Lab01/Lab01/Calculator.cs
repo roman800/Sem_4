@@ -39,6 +39,28 @@ namespace Lab01
             return result;
         }
 
+        //Using Accumulator
+        public double Add(double a)
+        {
+            
+            return Add(Accumulator,a);
+        }
+
+        public double Subtract(double a)
+        {
+            return Subtract(Accumulator,a);
+        }
+
+        public double Multiply(double a)
+        {
+            return  Multiply(Accumulator,a);
+        }
+
+        public double Power(double x)
+        {
+            return Power(Accumulator,x);
+        }
+
         public void Clear()
         {
             Accumulator = 0d;
